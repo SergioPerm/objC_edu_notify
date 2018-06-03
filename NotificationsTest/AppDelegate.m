@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "Goverment.h"
 
 @interface AppDelegate ()
+
+@property (strong, nonatomic) Goverment* goverment;
 
 @end
 
@@ -22,7 +25,29 @@
     self.window.rootViewController = [[UIViewController alloc] init];
     [self.window makeKeyAndVisible];
 
+    self.goverment = [[Goverment alloc] init];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(governmentNotification:)
+                                             name:GovermentTaxLevelDidChangeNotification
+                                               object:nil];
+    
+    self.goverment.taxLevel = 6;
+    self.goverment.salary = 1100;
+    self.goverment.pension = 550;
+    self.goverment.averagePrice = 9;
+    
     return YES;
+}
+
+- (void) dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void) governmentNotification:(NSNotification*) notification {
+    
+    NSLog(@"governmentNotofication userInfo = %@", notification.userInfo);
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

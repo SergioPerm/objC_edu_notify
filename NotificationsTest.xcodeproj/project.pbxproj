@@ -13,6 +13,7 @@
 		84E221D020BC1D03009E5212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E221CE20BC1D03009E5212 /* LaunchScreen.storyboard */; };
 		84E221DB20BC1D03009E5212 /* NotificationsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E221DA20BC1D03009E5212 /* NotificationsTestTests.m */; };
 		84E221E620BC1D03009E5212 /* NotificationsTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E221E520BC1D03009E5212 /* NotificationsTestUITests.m */; };
+		84E221F520BC236D009E5212 /* Goverment.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E221F420BC236D009E5212 /* Goverment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		84E221E120BC1D03009E5212 /* NotificationsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E221E520BC1D03009E5212 /* NotificationsTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationsTestUITests.m; sourceTree = "<group>"; };
 		84E221E720BC1D03009E5212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E221F320BC236D009E5212 /* Goverment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goverment.h; sourceTree = "<group>"; };
+		84E221F420BC236D009E5212 /* Goverment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goverment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 			children = (
 				84E221C920BC1D03009E5212 /* AppDelegate.h */,
 				84E221CA20BC1D03009E5212 /* AppDelegate.m */,
+				84E221F320BC236D009E5212 /* Goverment.h */,
+				84E221F420BC236D009E5212 /* Goverment.m */,
 				84E221CC20BC1D03009E5212 /* Assets.xcassets */,
 				84E221CE20BC1D03009E5212 /* LaunchScreen.storyboard */,
 				84E221D120BC1D03009E5212 /* Info.plist */,
@@ -261,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E221F520BC236D009E5212 /* Goverment.m in Sources */,
 				84E221CB20BC1D03009E5212 /* AppDelegate.m in Sources */,
 				84E221C820BC1D03009E5212 /* main.m in Sources */,
 			);
